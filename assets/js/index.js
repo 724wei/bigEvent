@@ -11,7 +11,7 @@ function getUserInfo() {
             renderAvatar(res.data)
         },
         // complete: res => {
-        //     if (res.responseJSON.status === 1 && res.responseJSON.message === "身份认证失败！") {
+        //     if (res.message === '身份认证失败！' && res.status === 1) {
         //         localStorage.removeItem('token')
         //         location.href = '/login.html'
         //     }
